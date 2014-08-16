@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  border: 1px solid white;
+}
+
+body {
+  background: url('images/slide_1.jpg');
+  /*position: absolute;*/
+}
+
+.main-wrapper {
+  width: 100%;
+  background: brown;
+}
+
+.content-width {
+  width: 80%;
+  margin: auto;
+}
