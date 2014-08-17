@@ -9,6 +9,7 @@ $(document).ready(function(){
 function bindListeners(){
   $('#prev-arrow').click(function(e){
     e.preventDefault();
+    $('body').removeClass('slide_' + sliderIndex)
 
     if(sliderIndex === 0){
       sliderIndex = slides.length-1
@@ -19,7 +20,8 @@ function bindListeners(){
     var textContent = slides[sliderIndex].html;
 
     $('#slider-text').html(textContent);
-    $('body').removeClass().addClass('slide_' + (sliderIndex+1).toString() )
+
+    $('body').addClass('slide_' + sliderIndex)
   })
 
   $('#next-arrow').click(function(){
