@@ -16,20 +16,23 @@ function bindListeners(){
     } else {
       sliderIndex -= 1;
     }
-
     var textContent = slides[sliderIndex].html;
-
     $('#slider-text').html(textContent);
-
     $('body').addClass('slide_' + sliderIndex)
   })
 
-  $('#next-arrow').click(function(){
+  $('#next-arrow').click(function(e){
     e.preventDefault();
+    $('body').removeClass('slide_' + sliderIndex)
 
-
-     if(sliderIndex+1 === slides.length){ sliderIndex = 0; }
-    $('#slider-text').html("<h1>THIS HAS BEEN CHANGED</h1>")
+    if(sliderIndex === slides.length-1){
+      sliderIndex = 0
+    } else {
+      sliderIndex += 1;
+    }
+    var textContent = slides[sliderIndex].html;
+    $('#slider-text').html(textContent);
+    $('body').addClass('slide_' + sliderIndex)
   })
 
 }
