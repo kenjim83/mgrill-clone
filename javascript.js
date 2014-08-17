@@ -10,17 +10,16 @@ function bindListeners(){
   $('#prev-arrow').click(function(e){
     e.preventDefault();
 
-    if(sliderIndex === 0){ sliderIndex = slides.length-1 }
-    sliderIndex -= 1;
+    if(sliderIndex === 0){
+      sliderIndex = slides.length-1
+    } else {
+      sliderIndex -= 1;
+    }
 
     var textContent = slides[sliderIndex].html;
-    var imgLink = slides[sliderIndex].image;
 
     $('#slider-text').html(textContent);
-
-    // var bgCSS = "url(" + imgLink + ") no-repeat"
-
-    $('body').css( "background" , "url(" + imgLink + ") no-repeat" );
+    $('body').removeClass().addClass('slide_' + (sliderIndex+1).toString() )
   })
 
   $('#next-arrow').click(function(){
