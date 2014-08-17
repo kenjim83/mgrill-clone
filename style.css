@@ -63,20 +63,35 @@ a:hover {
 /* Header
 ==========================*/
 
-#intro {
+.header-top {
+  background: #1D1511;
+}
+.header-bottom {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('images/bg-header.png') no-repeat #211611;
+  background-position: center -50px;
+}
+.intro-text {
   float: left;
   padding: 15px;
   color: #FFF;
 }
-
 .social-bar {
   float: right;
   padding: 15px;
 }
+
+#logo {
+  margin-top: -50px;
+}
+.nav-bar {
+
+}
+
 header {
   width: 100%;
-  background: url('images/bg-header.png') no-repeat #4E2E28;
-  background-position: center;
   border-bottom: 5px solid #8B6969;
   -webkit-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 7px 10px 0px rgba(50, 50, 50, 0.75);
@@ -142,14 +157,14 @@ main {
       right: 40px;
     }
     .slider-text h1 {
-      font-size: 4vw;
+      font-size: 2em;
       padding-bottom: 10px;
       display: inline-block;
       margin: 0 0;
       border-bottom: 1px dotted rgba(255,255,255,0.25);
     }
     .slider-text p {
-      font-size: 1vw;
+      font-size: 1em;
       display: inline-block;
       margin: 0 0;
       border-bottom: 1px dotted rgba(255,255,255,0.25);
