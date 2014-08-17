@@ -1,152 +1,164 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Welcome to Mgrill</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="javascript.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.maximage.css">
+  <script src="javascripts/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/jquery.maximage.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="javascripts/javascript.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body class="bg_base slide_0">
+<body>
+  <div id="slider">
+    <img src="images/slider_diningroom.jpg"/>
+    <img src="images/slider_LA.jpg"/>
+    <img src="images/slider_meats.jpg"/>
+  </div>
 
-  <div class="main-wrapper">
 
-    <header>
 
-      <div class="header-top full-width">
+  <header>
 
-        <div class="header-top-content content-width group">
-          <div class="intro-text">
-            Brazilian Churrascaria - Los Angeles Steakhouse
+    <div class="header-top full-width">
+
+      <div class="header-top-content content-width group">
+        <div class="intro-text">
+          Brazilian Churrascaria - Los Angeles Steakhouse
+        </div>
+        <div class="social-bar">
+          <a href='#'><img src="images/icon-rss.png"></a>
+          <a href='#'><img src="images/icon-googleplus.png"></a>
+          <a href='#'><img src="images/icon-twitter.png"></a>
+          <a href='#'><img src="images/icon-facebook.png"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="header-bottom full-width group">
+      <img id="logo" src="images/logo.png">
+      <div class="nav-bar">
+        <ul>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>About</a></li>
+          <li><a href='#'>Menu</a></li>
+          <li><a href='#'>Special Events</a></li>
+          <li><a href='#'>News</a></li>
+          <li><a href='#'>Reservations</a></li>
+          <li><a href='#'>Group Dining</a></li>
+          <li><a href='#'>Catering</a></li>
+          <li><a href='#'>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="slider-text group">
+      <div id="swappable-text">
+        <h1>Welcome to M Grill</h1><br>
+        <p>Come see the newly remodeled and much larger M Grill interior.</p>
+      </div>
+      <a href="#" class="slider-arrows" id="prev-arrow"><img src="images/arrow-prev.png"></a>
+      <a href="#" class="slider-arrows" id="next-arrow"><img src="images/arrow-next.png"></a>
+
+    </div>
+
+    <div class="main-bottom group">
+
+      <div class="windows content-width group">
+
+        <div class="window left">
+          <div class="window-header">
+            <h3>Happy Hour Drinks</h3>
           </div>
-          <div class="social-bar">
-            <img src="images/icon-facebook.png">
-            <img src="images/icon-googleplus.png">
-            <img src="images/icon-rss.png">
-            <img src="images/icon-twitter.png">
+          <div class="window-img">
+            <img src='images/window_HH.jpg'>
+          </div>
+          <div class="window-content">
+            <p>It's always great to enjoy Brazilian BBQ with cocktails! And now you can enjoy special pricing on selected cocktails.</p>
+            <button>Get Happy Hour Info</button>
           </div>
         </div>
 
-      </div>
-
-      <div class="header-bottom full-width group">
-        <img id="logo" src="images/logo.png">
-        <div class="nav-bar">
-          <ul>
-            <li><a href='#'>HOME</a></li>
-            <li><a href='#'>ABOUT</a></li>
-            <li><a href='#'>MENU</a></li>
-            <li><a href='#'>SPECIAL EVENTS</a></li>
-            <li><a href='#'>NEWS</a></li>
-            <li><a href='#'>RESERVATIONS</a></li>
-            <li><a href='#'>GROUP DINING</a></li>
-            <li><a href='#'>CATERING</a></li>
-            <li><a href='#'>CONTACT</a></li>
-          </ul>
+        <div class="window left">
+          <div class="window-header">
+            <h3>Live Music Weekends</h3>
+          </div>
+          <div class="window-img">
+            <img src='images/window_guitar.jpg'>
+          </div>
+          <div class="window-content">
+            <p>Come in on a Friday or Saturday night and enjoy great music to compliment your fine dining experience at M Grill.</p>
+            <button>Get Live Music Info</button>
+          </div>
         </div>
-      </div>
 
-    </header>
-
-    <main>
-      <div class="slider-text group">
-        <a href="#" class="slider-arrows" id="prev-arrow"><img src="images/arrow-prev.png"></a>
-        <a href="#" class="slider-arrows" id="next-arrow"><img src="images/arrow-next.png"></a>
-        <div id="slider-text">
-          <h1>Welcome to M Grill</h1><br>
-          <p>Come see the newly remodeled and much larger M Grill interior.</p>
-        </div>
-      </div>
-
-      <div class="main-bottom">
-        <div class="windows content-width group">
+        <div class="window right">
+          <div class="window-header">
+            <h3>M Grill Catering Services</h3>
+          </div>
+          <div class="window-img">
+            <img src='images/window_catering.jpg'>
+          </div>
+          <div class="window-content">
+            <p>Take the Brazilian Churrasco experience to your next event. Our knowledgeable staff will customize to your needs!<p>
+              <button>Get Catering Info</button>
+            </div>
+          </div>
 
           <div class="window left">
             <div class="window-header">
-              <h3>Happy Hour Drinks</h3>
+              <h3>Take a Virtual Tour</h3>
             </div>
             <div class="window-img">
-              <img src='http://lorempixel.com/400/200/'>
+              <img src='images/window_catering.jpg'>
             </div>
             <div class="window-content">
-              <p>It's always great to enjoy Brazilian BBQ with cocktails! And now you can enjoy special pricing on selected cocktails.</p>
-              <button>Get Happy Hour Info</button>
+              <p>If you haven't seen the new M Grill interior, take a virtual tour by clicking below.</p>
+              <button>Take Virtual Tour</button>
             </div>
           </div>
 
           <div class="window left">
             <div class="window-header">
-              <h3>Live Music Weekends</h3>
+              <h3>See Menu & Photos</h3>
             </div>
             <div class="window-img">
-              <img src='http://lorempixel.com/400/200/'>
+              <img src='images/window_catering.jpg'>
             </div>
             <div class="window-content">
-              <p>Come in on a Friday or Saturday night and enjoy great music to compliment your fine dining experience at M Grill.</p>
-              <button>Get Live Music Info</button>
+              <p>M Grill is proud to serve the freshest and finest cuts of beef, lamb, chicken and pork. See our full menu by clicking below.</p>
+              <button>See Full Menu & Photos</button>
             </div>
           </div>
 
           <div class="window right">
             <div class="window-header">
-              <h3>M Grill Catering Services</h3>
+              <h3>Group Dining</h3>
             </div>
             <div class="window-img">
-              <img src='http://lorempixel.com/400/200/'>
+              <img src='images/window_large_groups.jpg'>
             </div>
             <div class="window-content">
-              <p>Take the Brazilian Churrasco experience to your next event. Our knowledgeable staff will customize to your needs!<p>
-                <button>Get Catering Info</button>
-              </div>
-            </div>
-
-            <div class="window left">
-              <div class="window-header">
-                <h3>Take a Virtual Tour</h3>
-              </div>
-              <div class="window-img">
-                <img src='http://lorempixel.com/400/200/'>
-              </div>
-              <div class="window-content">
-                <p>If you haven't seen the new M Grill interior, take a virtual tour by clicking below.</p>
-                <button>Take Virtual Tour</button>
-              </div>
-            </div>
-
-            <div class="window left">
-              <div class="window-header">
-                <h3>See Menu & Photos</h3>
-              </div>
-              <div class="window-img">
-                <img src='http://lorempixel.com/400/200/'>
-              </div>
-              <div class="window-content">
-                <p>M Grill is proud to serve the freshest and finest cuts of beef, lamb, chicken and pork. See our full menu by clicking below.</p>
-                <button>See Full Menu & Photos</button>
-              </div>
-            </div>
-
-            <div class="window right">
-              <div class="window-header">
-                <h3>Group Dining</h3>
-              </div>
-              <div class="window-img">
-                <img src='http://lorempixel.com/400/200/'>
-              </div>
-              <div class="window-content">
-                <p>It's always great to enjoy Brazilian BBQ with cocktails! And now you can enjoy special pricing on selected cocktails.</p>
-                <button>Get Happy</button>
-              </div>
+              <p>It's always great to enjoy Brazilian BBQ with cocktails! And now you can enjoy special pricing on selected cocktails.</p>
+              <button>Get Happy</button>
             </div>
           </div>
         </div>
+      </div>
+    </div>  <!-- End Main Bottom -->
 
-      </main>
+  </main>
 
-      <footer>
-      </footer>
 
-    </div>
+
   </body>
+
 
 
 
