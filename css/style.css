@@ -46,6 +46,7 @@ header {
   margin-right: auto;
   background: url('../images/bg-header.png') no-repeat #211611;
   background-position: center -50px;
+
 }
 
 .intro-text {
@@ -79,7 +80,6 @@ header {
 .nav-bar ul {
   text-align: center;
   list-style: none;
-  padding: 3px;
 }
 
 .nav-bar li {
@@ -91,18 +91,10 @@ header {
 .nav-bar li:hover {
   color: orange;
   border-bottom: 5px solid orange;
-  padding: 0 0 19px 0;
+  padding: 0 0 16px 0;
 }
 
 
-
-/* Main
-==========================*/
-
-main {
-  width: 100%;
-  display: block;
-}
 
 
 /* Slider Text Area
@@ -110,13 +102,14 @@ main {
 
 .slider-text {
   background: url('../images/bg-overlay-pattern.png') repeat;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   font-size: 1.5em;
   height: 700px;
   color: white;
   text-align: center;
   padding-top: 300px;
 }
+
 .slider-text h1 {
   font-size: 2em;
   padding-bottom: 10px;
@@ -124,12 +117,14 @@ main {
   margin: 0 0;
   border-bottom: 1px dotted rgba(255,255,255,0.4);
 }
+
 .slider-text p {
   font-size: 1em;
   display: inline-block;
   margin: 0 0;
   border-bottom: 1px dotted rgba(255,255,255,0.4);
 }
+
 .slider-arrows {
   opacity: .6;
   position: absolute;
@@ -138,23 +133,19 @@ main {
   -moz-transition:.5s;
   -webkit-transition:.5s;
 }
+
 .slider-arrows:hover {
   opacity: 1;
 }
+
 #prev-arrow {
   left: 40px;
 }
+
 #next-arrow {
   right: 40px;
 }
 
-
-.in-slide-content {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  border-bottom: 1px dotted rgba(255,255,255,0.25);
-  margin: 0 0;
-}
 
 
 /* Callout Windows */
@@ -163,15 +154,18 @@ main {
   position: relative;
   top: -192px;
 }
+
 .window-header {
   color: #FFF;
   background: orange;
   padding: 2px;
 }
+
 .window-header h1 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .window {
   text-align: center;
   width: 320px;
@@ -182,6 +176,7 @@ main {
   overflow: hidden;
 
 }
+
 .window button {
   font-size: 1em;
   padding: 20px;
@@ -206,9 +201,9 @@ main {
 .window-img {
   overflow: hidden;
   height: 125px;
-
   border-bottom: 5px solid #8B6969;
 }
+
 .window-img img {
   width: 100%;
 }
@@ -239,7 +234,16 @@ box-shadow:         0px -7px 10px 0px rgba(50, 50, 50, 0.75);
 /* Footer
 ==========================*/
 
-
+footer {
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: black;
+  padding: 20px;
+}
+footer a {
+  color: orange;
+}
 
 
 
@@ -299,12 +303,10 @@ box-shadow:         0px -7px 10px 0px rgba(50, 50, 50, 0.75);
   }
 
 
-
 }
 
 
 @media (max-width: 430px) {
-
 
   .social-bar {
     display: none;
